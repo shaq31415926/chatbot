@@ -1,0 +1,8 @@
+uuid
+pandas
+clint
+nltk
+word2number
+datetime
+numpy
+
