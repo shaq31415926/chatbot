@@ -1,3 +1,4 @@
+import os
 import uuid
 import logging
 from nltk.metrics import edit_distance
@@ -6,7 +7,6 @@ from word2number import w2n
 import pandas as pd
 import datetime
 import numpy as np
-
 
 class Chatbot(object):
     """
@@ -17,7 +17,8 @@ class Chatbot(object):
         self.name = name
         self.startTime = datetime.datetime.now()
         self.transcript = "{}_transcript".format(self.startTime.strftime("%Y%m%d%H%M"))
-        logging.basicConfig(filename='../data/transcript logs/{}.csv'.format(self.transcript),
+        self.dirname = os.path.dirname(__file__)
+        logging.basicConfig(filename=os.path.join(self.dirname, '../data/transcript logs/{}.csv'.format(self.transcript)),
                             filemode="w",
                             format='%(asctime)s %(message)s',
                             level=logging.INFO)
@@ -82,7 +83,7 @@ class Chatbot(object):
 
     def collect_truck(self):
         """"collects truck name and matches against a predefined list of trucks"""
-        known_trucks = pd.read_csv("../data/input data/trucks.csv")
+        known_trucks = pd.read_csv(os.path.join(self.dirname,"../data/input data/trucks.csv"))
 
         truck_name = self.ask("What is the name of your truck?")
 
@@ -115,14 +116,14 @@ class Chatbot(object):
                 new_truck = pd.DataFrame.from_dict({"truck_name": [truck_name],
                                                     "truck_name_lower": [truck_name.lower()]
                                                     })
-                new_truck.to_csv("../data/input data/trucks.csv", mode='a', header=False, index=False)
+                new_truck.to_csv(os.path.join(self.dirname,"../data/input data/trucks.csv"), mode='a', header=False, index=False)
 
         return truck_name
 
     def store_data(self, str_dat_dict):
         """store the data we are interested in"""
         self.store_dat.append(str_dat_dict)
-        pd.DataFrame(self.store_dat).to_csv("../data/captured data/final_data.csv", mode='a', header=False, index=False)
+        pd.DataFrame(self.store_dat).to_csv(os.path.join(self.dirname,"../data/captured data/final_data.csv"), mode='a', header=False, index=False)
 
     def start_chat(self):
         """run to start chat and ask a series of questions"""
