@@ -1,7 +1,341 @@
-truck_name,truck_name_lower
-Iveco PowerStar 420 E5,iveco powerstar 420 e5
-Mercedes-Benz Actros,mercedes-benz actros
-MAZ-5440,max-5440
-MAN TGX,max tgx
-KrAZ 6322,kraz 6322
-Toyota,toyota
+manufacturer_name,model_name,class,cabin,country_of_origin,manufacturer_name_lower,model_name_lower,user_entry
+American LaFrance,American Lafrance Condor,Medium,COE,United States,american lafrance,american lafrance condor,0
+Agrale,Agrale 6500,Light,COE,Brazil,agrale,agrale 6500,0
+Agrale,Agrale 8700,Light,COE,Brazil,agrale,agrale 8700,0
+Agrale,Agrale 10000,Light,COE,Brazil,agrale,agrale 10000,0
+Agrale,Agrale 14000,Light/Medium,COE,Brazil,agrale,agrale 14000,0
+AMW,AMW TP Series,Heavy,COE,India,amw,amw tp series,0
+Ashok Leyland,Ashok Layland Avia,Light,COE,India,ashok leyland,ashok layland avia,0
+Ashok Leyland,Ashok Leyland U-Truck,Heavy,COE,India,ashok leyland,ashok leyland u-truck,0
+Askam,Askam AS 950,Medium,Conventional,Turkey,askam,askam as 950,0
+Askam,Askam 8 Litre,Heavy,COE,Turkey,askam,askam 8 litre,0
+Askam,Askam Hi-Ex,Heavy,COE,Turkey,askam,askam hi-ex,0
+Astra,Astra HD9,Heavy,COE,Italy,astra,astra hd9,0
+AMW,AMW TR Series,Heavy,COE,India,amw,amw tr series,0
+AMW,AMW HL Series,Heavy,COE,India,amw,amw hl series,0
+AMW,AMW TM Series,Heavy,COE,India,amw,amw tm series,0
+AMW,AMW CP Series,Heavy,COE,India,amw,amw cp series,0
+Autocar,Autocar Xspotter,Light,COE,United States,autocar,autocar xspotter,0
+Autocar,Autocar Expert,Medium,COE,United States,autocar,autocar expert,0
+Autocar,Autocar Refuse,Heavy,COE,United States,autocar,autocar refuse,0
+Avia Trucks,Avia D-Line,Light,COE,Czech Republic,avia trucks,avia d-line,0
+AzUniversal Motors,Isuzu,Light,COE,Azerbaijan,azuniversal motors,isuzu,0
+BeiBen,BeiBen V3 Series,Heavy,COE,China,beiben,beiben v3 series,0
+BeiBen,BeiBen NG80 Series,Heavy,COE,China,beiben,beiben ng80 series,0
+BeiBen,BeiBen Eurysome,Heavy,COE,China,beiben,beiben eurysome,0
+BeiBen,BeiBen Tiema Series,Heavy,COE,China,beiben,beiben tiema series,0
+Beijing Automobile Works,BAW Dragon Flag,Light,COE,China,beijing automobile works,baw dragon flag,0
+Beijing Automobile Works,BAW Bell,Light,COE,China,beijing automobile works,baw bell,0
+BharatBenz,BharatBenz 914,Light,COE,India/Germany,bharatbenz,bharatbenz 914,0
+BharatBenz,BharatBenz 1214,Medium,COE,India/Germany,bharatbenz,bharatbenz 1214,0
+BharatBenz,BharatBenz 2523,Heavy,COE,India/Germany,bharatbenz,bharatbenz 2523,0
+BharatBenz,BharatBenz 3128,Heavy,COE,India/Germany,bharatbenz,bharatbenz 3128,0
+BharatBenz,BharatBenz 3143,Heavy,COE,India/Germany,bharatbenz,bharatbenz 3143,0
+BharatBenz,BharatBenz 3723,Heavy,COE,India,bharatbenz,bharatbenz 3723,0
+Bryansk Automobile Plant,BAZ-69096,Military Heavy,Cabin before engine,Russia,bryansk automobile plant,baz-69096,0
+Bryansk Automobile Plant,BAZ-69096 (civilian version),Heavy,Cabin before engine,Russia,bryansk automobile plant,baz-69096 (civilian version),0
+Bryansk Automobile Plant,BAZ-64022,Military Heavy,Cabin before engine,Russia,bryansk automobile plant,baz-64022,0
+BMC (Turkey),BMC Fatih,Heavy,COE,Turkey,bmc (turkey),bmc fatih,0
+BMC,BMC Profesyonel,Light/Medium/Heavy,COE,Turkey,bmc,bmc profesyonel,0
+Caterpillar,CAT CT660,Heavy,Conventional,United States,caterpillar,cat ct660,0
+CEV,Might-E Truck,Light,COE,Canada,cev,might-e truck,0
+Chevrolet,Chevrolet NHR,Light,COE,Japan,chevrolet,chevrolet nhr,0
+Chevrolet,Chevrolet NKR,Light,COE,Japan,chevrolet,chevrolet nkr,0
+Chevrolet,Chevrolet N-Series,Light,COE,Japan,chevrolet,chevrolet n-series,0
+Chevrolet,Chevrolet Express Cutaway,Light,Conventional,United States,chevrolet,chevrolet express cutaway,0
+Chevrolet,Chevrolet FTR,Medium,COE,Japan,chevrolet,chevrolet ftr,0
+Chevrolet,Chevrolet FVR,Heavy,COE,Japan,chevrolet,chevrolet fvr,0
+Chevrolet,Chevrolet FVZ,Heavy,COE,Japan,chevrolet,chevrolet fvz,0
+Chevrolet,Chevrolet CYZ,Heavy,COE,Japan,chevrolet,chevrolet cyz,0
+Citroën,Citroën Jumper,Light,Conventional,Italy,citroën,citroën jumper,0
+CCC,CCC LET2,Medium,COE,United States,ccc,ccc let2,0
+CCC,CCC COE2,Medium,COE,United States,ccc,ccc coe2,0
+CCC,CCC LOT2,Medium,COE,United States,ccc,ccc lot2,0
+CNJ,CNJ Fortune,Light,COE,China,cnj,cnj fortune,0
+CNJ,CNJ Ruichi,Light,COE,China,cnj,cnj ruichi,0
+DAF Trucks,DAF LF,Light,COE,The Netherlands,daf trucks,daf lf,0
+DAF Trucks,DAF CF,Heavy,COE,The Netherlands,daf trucks,daf cf,0
+DAF Trucks,DAF XF,Heavy,COE,The Netherlands,daf trucks,daf xf,0
+Dayun,Dayun CGC1047PB33E3,Light,COE,China,dayun,dayun cgc1047pb33e3,0
+Dayun,Dayun CGC1141,Heavy,COE,China,dayun,dayun cgc1141,0
+Dayun,Dayun DYX1250,Heavy,COE,China,dayun,dayun dyx1250,0
+Dayun,Dayun CGC1311,Heavy,COE,China,dayun,dayun cgc1311,0
+Dayun,Dayun DYX5310,Heavy,COE,China,dayun,dayun dyx5310,0
+Dina,Dina Hustler,Light,COE,Mexico,dina,dina hustler,0
+Dongfeng,Dongfeng Palawan,Light,COE,Japan,dongfeng,dongfeng palawan,0
+Dongfeng,Dongfeng Gold Fighter,Light,COE,China,dongfeng,dongfeng gold fighter,0
+Dongfeng,Dongfeng Chenglong,Light,COE,China,dongfeng,dongfeng chenglong,0
+Dongfeng,Dongfeng Kang PA,Light,COE,China,dongfeng,dongfeng kang pa,0
+Dongfeng,Dongfeng Star,Light,COE,China,dongfeng,dongfeng star,0
+Dongfeng,Dongfeng Badly,Light,COE,China,dongfeng,dongfeng badly,0
+Dongfeng,Dongfeng Days Kam,Medium,COE,China,dongfeng,dongfeng days kam,0
+Dongfeng,Dongfeng Likas,Medium,COE,China,dongfeng,dongfeng likas,0
+Dongfeng,Dongfeng King Kong,Medium,COE,China,dongfeng,dongfeng king kong,0
+Dongfeng,Dongfeng Tianlong,Heavy,COE,China,dongfeng,dongfeng tianlong,0
+Dongfeng,Dongfeng Titan,Heavy,COE,China,dongfeng,dongfeng titan,0
+Dongfeng,Dongfeng Balong Heavy Truck,Heavy,COE,China,dongfeng,dongfeng balong heavy truck,0
+Dongfeng,Dongfeng Dragon Card,Heavy,Conventional,China,dongfeng,dongfeng dragon card,0
+FAP,FAP 1318,Light,COE,Serbia,fap,fap 1318,0
+FAP,FAP 1824,Light,COE,Serbia,fap,fap 1824,0
+FAP,FAP 1828,Light,COE,Serbia,fap,fap 1828,0
+FAP,FAP 1830,Heavy,COE,Serbia,fap,fap 1830,0
+FAP,FAP 2235,Light,COE,Serbia,fap,fap 2235,0
+FAP,FAP 2640,Heavy,COE,Serbia,fap,fap 2640,0
+FAW,FAW CA1051K26L3,Light,COE,China,faw,faw ca1051k26l3,0
+FAW,FAW CA1051K26L3R5,Light,COE,China,faw,faw ca1051k26l3r5,0
+FAW,FAW CA1037K2L,Light,COE,China,faw,faw ca1037k2l,0
+FAW,FAW CA1031K2LR5,Light,COE,China,faw,faw ca1031k2lr5,0
+FAW,FAW CA1031K2L,Light,COE,China,faw,faw ca1031k2l,0
+FAW,FAW CA5313CLXYP7K2L11T4,Medium,COE,China,faw,faw ca5313clxyp7k2l11t4,0
+FAW,FAW CA3075K2,Medium,Conventional,China,faw,faw ca3075k2,0
+FAW,FAW CA4322P21K15T1YA82,Medium,COE,China,faw,faw ca4322p21k15t1ya82,0
+FAW,FAW CA3313P7K2T4A,Heavy,COE,China,faw,faw ca3313p7k2t4a,0
+FAW,FAW CA4252P21K2T1A,Heavy,COE,China,faw,faw ca4252p21k2t1a,0
+FAW,FAW J6,Heavy,COE,China,faw,faw j6,0
+FAW-GM,Jie Fang 1-Ton Truck,Light,COE,China/United States,faw-gm,jie fang 1-ton truck,0
+FAW-GM,Jie Fang 2-Ton Truck,Medium,COE,China/United States,faw-gm,jie fang 2-ton truck,0
+FAW-GM,Jie Fang 3-Ton Truck,Heavy,COE,China/United States,faw-gm,jie fang 3-ton truck,0
+Fiat,Fiat Ducato,Light,Conventional,Italy,fiat,fiat ducato,0
+Ford,Ford F-650/750,Medium,Conventional,United States,ford,ford f-650/750,0
+Ford,Ford Econoline Cataway,Light,Conventional,United States,ford,ford econoline cataway,0
+Ford,Ford Cargo,Light/Medium/Heavy,COE,Brazil and Turkey(formally United States),ford,ford cargo,0
+Ford Otosan,Ford F-MAX,Heavy,COE,Turkey,ford otosan,ford f-max,0
+Foton,Foton Aumark Series,Light,COE,China,foton,foton aumark series,0
+Foton,Foton Ollin Series,Light,COE,China,foton,foton ollin series,0
+Foton,Foton Auman Series,Heavy,COE,China,foton,foton auman series,0
+Freightliner,Freigtliner M2 106,Medium,Conventional,United States,freightliner,freigtliner m2 106,0
+Freightliner,Freightliner M2 112,Medium,Conventional,United States,freightliner,freightliner m2 112,0
+Freightliner,Freightliner Coronado Series,Heavy,Conventional,United States,freightliner,freightliner coronado series,0
+Freightliner,Freightliner Cascadia,Heavy,Conventional,United States,freightliner,freightliner cascadia,0
+Freightliner,Freightliner 108SD,Heavy,Conventional,United States,freightliner,freightliner 108sd,0
+Freightliner,Freightliner 114SD,Heavy,Conventional,United States,freightliner,freightliner 114sd,0
+Freightliner,Freightliner Century Class,Heavy,Conventional,Australia(formally United States),freightliner,freightliner century class,0
+Freightliner,Freightliner Argosy,Heavy,COE,Australia/South Africa(Formally United States),freightliner,freightliner argosy,0
+GAZ,GAZ 3307 /3309,Medium,Conventional,Russia,gaz,gaz 3307 /3309,0
+GAZ,GAZ 3308 Sadko,Medium,Conventional,Russia,gaz,gaz 3308 sadko,0
+GAZ,GAZ Gazelle,Light,Conventional,Russia,gaz,gaz gazelle,0
+GAZ,GAZelle NEXT,Light,Conventional,Russia,gaz,gazelle next,0
+GAZ,GAZon NEXT,Medium,Conventional,Russia,gaz,gazon next,0
+GAZ,GAZ Sadko NEXT,Medium,Conventional,Russia,gaz,gaz sadko next,0
+GAZ,GAZ Valdai,Medium,Conventional,Russia,gaz,gaz valdai,0
+GINAF,GINAF C-Series,Medium,COE,The Netherlands,ginaf,ginaf c-series,0
+GINAF,GINAF X-Series,Heavy,COE,The Netherlands,ginaf,ginaf x-series,0
+Hino,Hino 300 Series,Light,COE,Japan,hino,hino 300 series,0
+Hino,Hino 238,Medium,Conventional,United States/Canada,hino,hino 238,0
+Hino,Hino 500 Series,Medium,COE,Japan,hino,hino 500 series,0
+Hino,Hino 700 Series,Heavy,COE,Japan,hino,hino 700 series,0
+Hyundai,Hyundai HD45,Light,COE,South Korea,hyundai,hyundai hd45,0
+Hyundai,Hyundai HD65/72/78,Light,COE,South Korea,hyundai,hyundai hd65/72/78,0
+Hyundai,Hyundai H350,Light,Conventional,South Korea,hyundai,hyundai h350,0
+Hyundai,Hyundai Mighty,Light,COE,South Korea,hyundai,hyundai mighty,0
+Hyundai,Hyundai HD120/210,Medium,COE,South Korea,hyundai,hyundai hd120/210,0
+Hyundai,Hyundai Cargo Truck,Heavy,COE,South Korea,hyundai,hyundai cargo truck,0
+Hyundai,Hyundai Xcient,Heavy,COE,South Korea,hyundai,hyundai xcient,0
+Iran Khodro Diesel,Khawar 1934,Heavy,Conventional,"(Originally)Germany
+(Currently)Iran",iran khodro diesel,khawar 1934,0
+Isuzu,Isuzu N-Series,Light,COE,Japan,isuzu,isuzu n-series,0
+Isuzu,Mazda Titan,Light,COE,Japan,isuzu,mazda titan,0
+Isuzu,Isuzu Elf,Light,COE,Japan,isuzu,isuzu elf,0
+Isuzu,Isuzu Forward,Medium,COE,Japan,isuzu,isuzu forward,0
+Isuzu,Isuzu Giga,Heavy,COE,Japan,isuzu,isuzu giga,0
+Iveco,Iveco Daily,Light/Medium,Conventional,Italy,iveco,iveco daily,0
+Iveco,Iveco PowerStar,Heavy,Conventional,Australia,iveco,iveco powerstar,0
+Iveco,Iveco Eurocargo,Light,COE,Germany,iveco,iveco eurocargo,0
+Iveco,Iveco Trakker,Heavy,COE,Germany,iveco,iveco trakker,0
+Iveco,Iveco Stralis,Heavy,COE,Germany,iveco,iveco stralis,0
+JAC,JAC 4DA1 Series,Light,COE,China,jac,jac 4da1 series,0
+JAC,JAC FHC Series,Light,COE,China,jac,jac fhc series,0
+JAC,JAC Shuailing,Medium,COE,China,jac,jac shuailing,0
+JAC,JAC Tipper,Heavy,COE,China,jac,jac tipper,0
+JAC,JAC Tractor,Heavy,COE,China,jac,jac tractor,0
+JMC,JMC Carrying,Light,COE,China,jmc,jmc carrying,0
+Kalmar Industries,Kalmar 4x2 off Highway,Medium,COE,Finland,kalmar industries,kalmar 4x2 off highway,0
+Kalmar Industries,Kalmar TR-Series,Medium,COE,Finland,kalmar industries,kalmar tr-series,0
+KAMAZ,KAMAZ 43253,Heavy,COE,Russia,kamaz,kamaz 43253,0
+KAMAZ,KAMAZ 43114,Heavy,COE,Russia,kamaz,kamaz 43114,0
+KAMAZ,KAMAZ 65207,Heavy,COE,Russia,kamaz,kamaz 65207,0
+KAMAZ,KAMAZ 65117,Heavy,COE,Russia,kamaz,kamaz 65117,0
+KAMAZ,KAMAZ 4326,Medium,COE,Russia,kamaz,kamaz 4326,0
+KAMAZ,KAMAZ 4308,Medium,COE,Russia,kamaz,kamaz 4308,0
+KAMAZ,KAMAZ 54115,Heavy,COE,Russia,kamaz,kamaz 54115,0
+KAMAZ,KAMAZ 5460,Heavy,COE,Russia,kamaz,kamaz 5460,0
+KAMAZ,KAMAZ 5490,Heavy,COE,Russia,kamaz,kamaz 5490,0
+KAMAZ,KAMAZ 65116,Heavy,COE,Russia,kamaz,kamaz 65116,0
+KAMAZ,KAMAZ 65206,Heavy,COE,Russia,kamaz,kamaz 65206,0
+KAMAZ,KAMAZ 6460,Heavy,COE,Russia,kamaz,kamaz 6460,0
+KAMAZ,KAMAZ 44108,Heavy,COE,Russia,kamaz,kamaz 44108,0
+KAMAZ,KAMAZ 65201,Heavy,COE,Russia,kamaz,kamaz 65201,0
+KAMAZ,KAMAZ 65224,Heavy,COE,Russia,kamaz,kamaz 65224,0
+KAMAZ,KAMAZ 65225,Heavy,COE,Russia,kamaz,kamaz 65225,0
+KAMAZ,KAMAZ 65226,Heavy,COE,Russia,kamaz,kamaz 65226,0
+Kia,Kia Bongo,Light,COE,South Korea,kia,kia bongo,0
+Kenworth,Kenworth K270,Light,COE,United States,kenworth,kenworth k270,0
+Kenworth,Kenworth T170,Medium,Conventional,United States,kenworth,kenworth t170,0
+Kenworth,Kenworth T409SAR,Heavy,Conventional,Australia,kenworth,kenworth t409sar,0
+Kenworth,Kenworth T359,Heavy,Conventional,Australia,kenworth,kenworth t359,0
+Kenworth,Kenworth C500,Heavy,Conventional,United States,kenworth,kenworth c500,0
+Kenworth,Kenworth C509,Heavy,Conventional,Australia,kenworth,kenworth c509,0
+Kenworth,Kenworth T800,Heavy,Conventional,United States,kenworth,kenworth t800,0
+Kenworth,Kenworth W900,Heavy,Conventional,United States,kenworth,kenworth w900,0
+Kenworth,Kenworth T660,Heavy,Conventional,United States,kenworth,kenworth t660,0
+Kenworth,Kenworth T659,Heavy,Conventional,Australia,kenworth,kenworth t659,0
+Kenworth,Kenworth T700,Heavy,Conventional,United States,kenworth,kenworth t700,0
+Kenworth,Kenworth T680,Heavy,Conventional,United States,kenworth,kenworth t680,0
+Kenworth,Kenworth T880,Heavy,Conventional,United States,kenworth,kenworth t880,0
+Kenworth,Kenworth T909,Heavy,Conventional,Australia,kenworth,kenworth t909,0
+KrAZ,KrAZ-6322,Heavy,Conventional,Ukraine,kraz,kraz-6322,0
+KrAZ,KrAZ-6505,Heavy,Conventional,Ukraine,kraz,kraz-6505,0
+KrAZ,KrAZ-6510,Heavy,Conventional,Ukraine,kraz,kraz-6510,0
+KrAZ,KrAZ-6443,Heavy,Conventional,Ukraine,kraz,kraz-6443,0
+KrAZ,KrAZ-5233,Heavy,Conventional,Ukraine,kraz,kraz-5233,0
+KrAZ,KrAZ H12.2,Heavy,COE,Ukraine,kraz,kraz h12.2,0
+KrAZ,KrAZ H23.2,Heavy,COE,Ukraine,kraz,kraz h23.2,0
+KrAZ,KrAZ S20.2,Heavy,COE,Ukraine,kraz,kraz s20.2,0
+KrAZ,KrAZ S26.2M,Heavy,COE,Ukraine,kraz,kraz s26.2m,0
+KrAZ,KrAZ H27.3,Heavy,COE,Ukraine,kraz,kraz h27.3,0
+KrAZ,KrAZ-5401,Heavy,COE,Ukraine,kraz,kraz-5401,0
+Mack Trucks,Mack Pinnacle Series,Heavy,Conventional,United States,mack trucks,mack pinnacle series,0
+Mack Trucks,Mack Titan,Heavy,Conventional,Australia,mack trucks,mack titan,0
+Mack Trucks,Mack Granite,Heavy,Conventional,United States,mack trucks,mack granite,0
+Mack Trucks,Mack TerraPro,Heavy,Conventional,United States,mack trucks,mack terrapro,0
+Mack Trucks,Mack Metro-Liner,Heavy,Conventional,Australia,mack trucks,mack metro-liner,0
+Mack Trucks,Mack Super-Liner,Heavy,Conventional,Australia,mack trucks,mack super-liner,0
+Mahindra Navistar,Mahindra Navistar DI3200,Light,COE,India/United States,mahindra navistar,mahindra navistar di3200,0
+Mahindra Navistar,Mahindra Navistar Loadking Zoom,Light,COE,India/United States,mahindra navistar,mahindra navistar loadking zoom,0
+Mahindra Navistar,Mahindra Navistar Torro,Medium,COE,India/United States,mahindra navistar,mahindra navistar torro,0
+Mahindra Navistar,Mahindra Navistar Traco,Medium,COE,India/United States,mahindra navistar,mahindra navistar traco,0
+Mahindra Navistar,Mahindra Navistar Truxo,Medium,COE,India/United States,mahindra navistar,mahindra navistar truxo,0
+Master,Master Highland,Light,COE,Pakistan,master,master highland,0
+Master,Master Forland,Light,COE,Pakistan,master,master forland,0
+Master,Master Foton,Light,COE,China,master,master foton,0
+Master,Master Grande,Medium,COE,Pakistan,master,master grande,0
+MAZ,MAZ-5309,Medium,COE,Belarus,maz,maz-5309,0
+MAZ,MAZ-4371,Medium,COE,Belarus,maz,maz-4371,0
+MAZ,MAZ-447131,Heavy,COE,Belarus,maz,maz-447131,0
+MAZ,MAZ-6440,Heavy,Conventional,Belarus,maz,maz-6440,0
+MAZ,MAZ-6312,Heavy,COE,Belarus,maz,maz-6312,0
+MAZ,MAZ-5440,Heavy,COE,Belarus,maz,maz-5440,0
+MAZ,MAZ-5433,Heavy,COE,Belarus,maz,maz-5433,0
+Mercedes-Benz,Mercedes-Benz Atego,Light,COE,Germany,mercedes-benz,mercedes-benz atego,0
+Mercedes-Benz,Mercedes-Benz Axor,Medium/Heavy,COE,Germany,mercedes-benz,mercedes-benz axor,0
+Mercedes-Benz,Mercedes-Benz Unimog,Medium,Conventional,Germany,mercedes-benz,mercedes-benz unimog,0
+Mercedes-Benz,Mercedes-Benz Zetros,Medium,Conventional,Germany,mercedes-benz,mercedes-benz zetros,0
+Mercedes-Benz,Mercedes-Benz Actros,Heavy,COE,Germany,mercedes-benz,mercedes-benz actros,0
+Mercedes-Benz,Mercedes-Benz Arocs,Heavy,COE,Germany,mercedes-benz,mercedes-benz arocs,0
+Mercedes-Benz,Mercedes-Benz Sprinter,Light,Conventional,Germany,mercedes-benz,mercedes-benz sprinter,0
+Mitsubishi Fuso,Mitsubishi Fuso Canter,Light,COE,Japan,mitsubishi fuso,mitsubishi fuso canter,0
+Mitsubishi Fuso,Mitsubishi Fuso Fighter,Medium,COE,Japan,mitsubishi fuso,mitsubishi fuso fighter,0
+Mitsubishi Fuso,Mitsubishi Fuso The Great,Heavy,COE,Japan,mitsubishi fuso,mitsubishi fuso the great,0
+Mitsubishi Fuso,Mitsubishi Fuso Super Great,Heavy,COE,Japan,mitsubishi fuso,mitsubishi fuso super great,0
+MZKT,MZKT - 75165,Medium,COE,Belarus,mzkt,mzkt - 75165,0
+MZKT,MZKT - 7402,Heavy,COE,Belarus,mzkt,mzkt - 7402,0
+MZKT,MZKT - 692371,Heavy,COE,Belarus,mzkt,mzkt - 692371,0
+Navistar International,International Citystar,Light,COE,Mexico(Formally United States),navistar international,international citystar,0
+Navistar International,International LoadStar,Medium,COE,United States,navistar international,international loadstar,0
+Navistar International,International TerraStar,Medium,Conventional,United States,navistar international,international terrastar,0
+Navistar International,International DuraStar,Medium,Conventional,United States,navistar international,international durastar,0
+Navistar International,International Transtar,Heavy,Conventional,United States,navistar international,international transtar,0
+Navistar International,International 9200i,Heavy,Conventional,Mexico,navistar international,international 9200i,0
+Navistar International,International 9400i,Heavy,Conventional,Mexico,navistar international,international 9400i,0
+Navistar International,International 9800i,Heavy,COE,Brazil,navistar international,international 9800i,0
+Navistar International,International 9900i,Heavy,Conventional,United States,navistar international,international 9900i,0
+Navistar International,International LoneStar,Heavy,Conventional,United States,navistar international,international lonestar,0
+Navistar International,International WorkStar,Heavy,Conventional,United States,navistar international,international workstar,0
+Navistar International,International PayStar,Heavy,Conventional,United States,navistar international,international paystar,0
+Navistar International,International ProStar+,Heavy,Conventional,United States,navistar international,international prostar+,0
+Nissan,Nissan Atlas,light,COE,Japan,nissan,nissan atlas,0
+Nissan,Renault Maxity,Light,COE,Japan,nissan,renault maxity,0
+MAN,MAN TGE,Light,COE,Poland,man,man tge,0
+MAN,MAN TG L,Light,COE,Germany,man,man tg l,0
+MAN,MAN TGM,Medium,COE,Germany,man,man tgm,0
+MAN,MAN TGS,Heavy,COE,Germany,man,man tgs,0
+MAN,MAN TGX,Heavy,COE,Germany,man,man tgx,0
+Peterbilt,Peterbilt 210,Light,COE,United States,peterbilt,peterbilt 210,0
+Peterbilt,Peterbilt 320,Light,COE,United States,peterbilt,peterbilt 320,0
+Peterbilt,Peterbilt 325,Medium,Conventional,United States,peterbilt,peterbilt 325,0
+Peterbilt,Peterbilt 348,Medium,Conventional,United States,peterbilt,peterbilt 348,0
+Peterbilt,Peterbilt 365,Medium,Conventional,United States,peterbilt,peterbilt 365,0
+Peterbilt,Peterbilt 382,Heavy,Conventional,United States,peterbilt,peterbilt 382,0
+Peterbilt,Peterbilt 384,Heavy,Conventional,United States,peterbilt,peterbilt 384,0
+Peterblit,Peterbilt 386,Heavy,Conventional,United States,peterblit,peterbilt 386,0
+Peterbilt,Peterbilt 389,Heavy,Conventional,United States,peterbilt,peterbilt 389,0
+Peterbilt,Peterbilt 587,Heavy,Conventional,United States,peterbilt,peterbilt 587,0
+Peterbilt,Peterbilt 579,Heavy,Conventional,United States,peterbilt,peterbilt 579,0
+Peugeot,Peugeot Boxer,Light,Conventional,Italy,peugeot,peugeot boxer,0
+Renault Trucks,Renault Midlum,Light,COE,France,renault trucks,renault midlum,0
+Renault Trucks,Renault Access,Medium,COE,France,renault trucks,renault access,0
+Renault Trucks,Renault Kerax,Medium/Heavy,COE,France,renault trucks,renault kerax,0
+Renault Trucks,Renault Premium,Heavy,COE,France,renault trucks,renault premium,0
+Renault Trucks,Renault C,Medium/Heavy,COE,France,renault trucks,renault c,0
+Renault Trucks,Renault T,Heavy,COE,France,renault trucks,renault t,0
+Roman,Roman 12.250 F,Medium,COE,Romania,roman,roman 12.250 f,0
+SAIC-Iveco Hongyan,Hongyan Cargo Truck,Heavy,COE,China/Italy,saic-iveco hongyan,hongyan cargo truck,0
+SAIC-Iveco Hongyan,Hongyan Tractor,Heavy,COE,China/Italy,saic-iveco hongyan,hongyan tractor,0
+SAIC-Iveco Hongyan,Hongyan Dump Truck,Heavy,COE,China/Italy,saic-iveco hongyan,hongyan dump truck,0
+SAIC-Iveco Hongyan,Hongyan Tanker Truck,Heavy,COE,China/Italy,saic-iveco hongyan,hongyan tanker truck,0
+Scania,Scania P-series,Medium/Heavy,COE,Sweden,scania,scania p-series,0
+Scania,Scania G-series,Medium/Heavy,COE,Sweden,scania,scania g-series,0
+Scania,Scania R-series,Heavy,COE,Sweden,scania,scania r-series,0
+Shaanxi,Shaanxi Olong Tractor Truck,Heavy,COE,China,shaanxi,shaanxi olong tractor truck,0
+Shaanxi,Shaanxi Delong Tractor Truck,Heavy,COE,China,shaanxi,shaanxi delong tractor truck,0
+Silant,Silant 3.3 TD,Light,Conventional,Russia,silant,silant 3.3 td,0
+Sinotruk,Sinotruk Steyr,Medium,COE,China,sinotruk,sinotruk steyr,0
+Sinotruk,Sinotruk HOWO T7H,Heavy,COE,China,sinotruk,sinotruk howo t7h,0
+Sinotruk,Sinotruk HOWO T5G,Heavy,COE,China,sinotruk,sinotruk howo t5g,0
+Sisu,Sisu Polar,Heavy,COE,Finland,sisu,sisu polar,0
+Sisu,Sisu Rock,Heavy,COE,Finland,sisu,sisu rock,0
+Smith,Smith Newton,Light,COE,United Kingdom,smith,smith newton,0
+SML Isuzu,SML Super,Light,COE,India,sml isuzu,sml super,0
+SNVI,SNVI truck M120,Light,COE,Algeria,snvi,snvi truck m120,0
+SNVI,SNVI truck TC260,Heavy,COE,Algeria,snvi,snvi truck tc260,0
+Tata,Tata Construck,Medium,COE,India,tata,tata construck,0
+Tata,Tata Novus,Medium,COE,South Korea,tata,tata novus,0
+Tata,Tata Prima,Heavy,COE,India,tata,tata prima,0
+Tata Daewoo,Tata Daewoo Novus,Medium,COE,South Korea,tata daewoo,tata daewoo novus,0
+Tata Daewoo,Tata Daewoo Prima,Heavy,COE,India,tata daewoo,tata daewoo prima,0
+Tatra Trucks,Tatra Phoenix,Heavy,COE,Czech Republic,tatra trucks,tatra phoenix,0
+Tatra Trucks,Tatra T815 TerrN°2,Heavy,COE,Czech Republic,tatra trucks,tatra t815 terrn°2,0
+Tatra Trucks,Tatra 810,Heavy,COE,Czech Republic,tatra trucks,tatra 810,0
+Tatra Trucks,Tatra Jamal,Heavy,Conventional,Czech Republic,tatra trucks,tatra jamal,0
+Toyota,Toyota Dyna,Light,COE,Japan,toyota,toyota dyna,0
+UAZ,UAZ-3303,Light,COE,Russia,uaz,uaz-3303,0
+UAZ,UAZ Cargo,Light,Conventional,Russia,uaz,uaz cargo,0
+UD Trucks,Nissan Cabstar,Light,COE,Japan,ud trucks,nissan cabstar,0
+UD Trucks,UD Condor,Light/Medium,COE,Japan,ud trucks,ud condor,0
+UD Trucks,UD Big Thumb,Heavy,COE,Japan,ud trucks,ud big thumb,0
+UD Trucks,UD Quon,Heavy,COE,Japan,ud trucks,ud quon,0
+UralAZ,Ural-4320,Heavy,Conventional,Russia,uralaz,ural-4320,0
+UralAZ,Ural-43206,Medium,Conventional,Russia,uralaz,ural-43206,0
+UralAZ,Ural-4320-3951,Heavy,COE,Russia,uralaz,ural-4320-3951,0
+UralAZ,Ural-432065,Heavy,Cab front of the engine,Russia,uralaz,ural-432065,0
+UralAZ,Ural-44202,Heavy,Conventional,Russia,uralaz,ural-44202,0
+UralAZ,Ural-5323,Heavy,COE,Russia,uralaz,ural-5323,0
+UralAZ,Ural-6368,Heavy,COE,Russia,uralaz,ural-6368,0
+UralAZ,Ural-6370,Heavy,COE,Russia,uralaz,ural-6370,0
+UralAZ,Ural Next,Heavy,COE,Russia,uralaz,ural next,0
+Volkswagen Truck & Bus,Volkswagen Constellation,Medium/Heavy,COE,Brazil,volkswagen truck & bus,volkswagen constellation,0
+Volkswagen Commercial Vehicles,Volkswagen Crafter,Light,Conventional,Poland,volkswagen commercial vehicles,volkswagen crafter,0
+Volkswagen Truck & Bus,Volkswagen Delivery,Light,COE,Brazil,volkswagen truck & bus,volkswagen delivery,0
+Volkswagen Truck & Bus,Volkswagen Worker,Medium,COE,Brazil,volkswagen truck & bus,volkswagen worker,0
+Volvo Trucks,Volvo FE,Medium,COE,Sweden,volvo trucks,volvo fe,0
+Volvo Trucks,Volvo FM,Heavy,COE,Sweden,volvo trucks,volvo fm,0
+Volvo Trucks,Volvo VHD,Medium,COE,United States,volvo trucks,volvo vhd,0
+Volvo Trucks,Volvo VM,Medium,COE,Sweden,volvo trucks,volvo vm,0
+Volvo Trucks,Volvo FH,Heavy,COE,Sweden,volvo trucks,volvo fh,0
+Volvo Trucks,Volvo FMX,Heavy,COE,Sweden,volvo trucks,volvo fmx,0
+Volvo Trucks,Volvo VN,Heavy,Conventional,United States,volvo trucks,volvo vn,0
+Volvo Trucks,Volvo VNX,Heavy,Conventional,United States,volvo trucks,volvo vnx,0
+Wanshan Special Vehicle,WS5250,Military Heavy,Cabin before engine,China,wanshan special vehicle,ws5250,0
+Wanshan Special Vehicle,WS5470,Military Heavy,Cabin before engine,China,wanshan special vehicle,ws5470,0
+Wuzheng Auto Works,A series,Light,Cabin before engine,China,wuzheng auto works,a series,0
+Wuzheng Auto Works,V series,Light,Cabin before engine,China,wuzheng auto works,v series,0
+Wuzheng Auto Works,D series,Light,Cabin before engine,China,wuzheng auto works,d series,0
+Western Star,Western Star 4700,Heavy,Conventional,United States/Canada,western star,western star 4700,0
+Western Star,Western Star 4800,Heavy,Conventional,United States/Canada,western star,western star 4800,0
+Western Star,Western Star 4900,Heavy,Conventional,United State/Canada,western star,western star 4900,0
+Western Star,Western Star 6900,Heavy,Conventional,United States/Canada,western star,western star 6900,0
+Yulon,Yue Loong Homer,Light,COE,Taiwan,yulon,yue loong homer,0
+Zastava Trucks,Zastava EuroZeta,Light,COE,Serbia,zastava trucks,zastava eurozeta,0
+Zastava Trucks,Zastava ZK- 101,Light,COE,Serbia,zastava trucks,zastava zk- 101,0
+ZiL,ZIL-4327,Medium,Conventional,Russia,zil,zil-4327,0
+ZiL,ZIL-4331,Heavy,Conventional,Russia,zil,zil-4331,0

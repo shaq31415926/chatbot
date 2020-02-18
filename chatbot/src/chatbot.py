@@ -10,7 +10,7 @@ import numpy as np
 
 class Chatbot(object):
     """
-    Chatbot chats with you about trucks. It stores information about trucks and keeps a transcript of each chat.
+    Purpose of this Chatbot to stores information about the users trucks. Every conversation is recorded.
     """
 
     def __init__(self, name):
@@ -81,58 +81,105 @@ class Chatbot(object):
             puts(colored.cyan("Thanks for talking about trucks with me today! Bye for now :)"))
             self.store_data(dat_dict)
 
+    def display_model_names(self, data, manufacturer_name):
+        """displays list of models based on manufacturer name.
+        For now assuming if we know the manufacturer name, we can match the model name"""
+        model_name_options = data['model_name'][data['manufacturer_name_lower'] == manufacturer_name.lower()]
+
+        model_selector_options = []
+
+        for n, name in enumerate(model_name_options):
+            model_selector_options.append({'selector': n + 1,
+                                           'prompt': name,
+                                           'return': name
+                                           })
+        return model_selector_options
+
     def collect_truck(self):
-        """"collects truck name and matches against a predefined list of trucks"""
+        """"collects manufacturer and model name and matches against the trucks dataset"""
         known_trucks = pd.read_csv(os.path.join(self.dirname,"../data/input data/trucks.csv"))
 
-        truck_name = self.ask("What is the name of your truck?")
+        # ask for manufacturer name
+        manufacturer_name = self.ask("What is the name of the manufacturer of your truck?")
 
-        matching_truck = []
+        matching_manufacturer = []
 
-        if truck_name.lower() in np.unique(known_trucks['truck_name_lower']):
-            self.answer("Thanks! I would like to get to know more about your {}.".format(truck_name))
+        if manufacturer_name.lower() in np.unique(known_trucks['manufacturer_name_lower']):
+            model_selector_options = self.display_model_names(known_trucks, manufacturer_name)
+            model_name = self.ask_multiple("Please select the name of your model?", model_selector_options)
+            self.answer("Thanks! I would like to get to know more about your {}.".format(model_name))
+
         else:
-            for truck in np.unique(known_trucks['truck_name']):
-                dist = edit_distance(truck_name.lower(), truck.lower())
-                matching_truck.append({"name": truck,
+            for manufacturer in np.unique(known_trucks['manufacturer_name']):
+                dist = edit_distance(manufacturer_name.lower(), manufacturer.lower())
+                matching_manufacturer.append({"name": manufacturer,
                                        "dist": dist
-                                      })
+                                       })
 
-            matching_truck_df = pd.DataFrame(matching_truck)
-            matched_truck = matching_truck_df['name'].loc[matching_truck_df['dist'].idxmin()]
+            matching_manufacturer_df = pd.DataFrame(matching_manufacturer)
+            matched_manufacturer = matching_manufacturer_df['name'].loc[matching_manufacturer_df['dist'].idxmin()]
 
-            truck_options = [{'selector': '1', 'prompt': 'Yes', 'return': 'yes'},
-                             {'selector': '2', 'prompt': 'No', 'return': 'no'}
-                           ]
+            manufacturer_options = [{'selector': '1', 'prompt': 'Yes', 'return': 'yes'},
+                                    {'selector': '2', 'prompt': 'No', 'return': 'no'}
+                                    ]
 
-            truck_matched = self.ask_multiple("Is {} the name of your truck?".format(matched_truck), truck_options)
+            manufacturer_matched = self.ask_multiple("Is {} the name of the manufacturer?".format(matched_manufacturer),\
+                                                     manufacturer_options)
 
-            if truck_matched == "yes":
-                truck_name = matched_truck
-                self.answer("Thanks! I would like to get to know more about your {}.".format(truck_name))
+            if manufacturer_matched == "yes":
+                manufacturer_name = matched_manufacturer
+
+                model_selector_options = self.display_model_names(known_trucks, manufacturer_name)
+                model_name = self.ask_multiple("Please select the name of your model?", model_selector_options)
+
+                self.answer("Thanks! I would like to get to know more about your {}".format(model_name))
+
             else:
-                self.answer("That's a new one! I'll add {} to my database.".format(truck_name))
-                self.answer("Next, I would like to get to know more about your truck.")
-                new_truck = pd.DataFrame.from_dict({"truck_name": [truck_name],
-                                                    "truck_name_lower": [truck_name.lower()]
-                                                    })
-                new_truck.to_csv(os.path.join(self.dirname,"../data/input data/trucks.csv"), mode='a', header=False, index=False)
+                self.answer("I was not aware of this one. Could I get some more information so I can add {} to my database.".\
+                            format(manufacturer_name))
+                model_name = self.ask("What is model name of the your truck?")
 
-        return truck_name
+                new_truck = pd.DataFrame.from_dict({"manufacturer_name": [manufacturer_name],
+                                                    "model_name": [model_name],
+                                                    "class": "Unknown",
+                                                    "cabin": "Unknown",
+                                                    "country_of_origin": "Unknown",
+                                                    "manufacturer_name_lower": [manufacturer_name.lower()],
+                                                    "model_name_lower": [model_name.lower()],
+                                                    "user_entry":1 # future development would include maintaining and tidying the manual entries
+                                                    })
+
+                new_truck.to_csv(os.path.join(self.dirname, "../data/input data/trucks.csv"), mode='a', header=False,
+                                  index=False)
+
+        return manufacturer_name, model_name
 
     def store_data(self, str_dat_dict):
         """store the data we are interested in"""
         self.store_dat.append(str_dat_dict)
-        pd.DataFrame(self.store_dat).to_csv(os.path.join(self.dirname,"../data/captured data/final_data.csv"), mode='a', header=False, index=False)
+        pd.DataFrame(self.store_dat).to_csv(os.path.join(self.dirname,"../data/captured data/final_data.csv"), \
+                                            mode='a', header=False, index=False)
 
     def start_chat(self):
         """run to start chat and ask a series of questions"""
-
         puts(colored.cyan("Hey! I'm {} :) Let's talk trucks.".format(self.name)))
-        username = self.ask("Let's start.. What is your name?")
-        self.answer("Hi {}".format(username))
 
-        # occupation
+        # data compliance check
+        puts(colored.red("Please note we keep a copy of all conversations, and use this information to learn more about your trucks"))
+        data_compliance_options = [{'selector': '1', 'prompt': 'Yes', 'return': 'yes'},
+                                   {'selector': '2', 'prompt': 'No', 'return': 'no'}
+                                  ]
+        data_compliance_check = self.ask_multiple("Are you happy to proceed?", data_compliance_options)
+
+        if data_compliance_check == "no":
+            puts(colored.cyan("Thanks! Bye for now :)"))
+            exit()
+
+        # start chat once data compliance check is completed
+        username = self.ask("Let's start.. What is your name?")
+        self.answer("Hi {}!".format(username))
+
+        # ask occupation - if they are not owners or managers, exit chat
         occupations = [{'selector': '1', 'prompt': 'Fleet Owner', 'return': 'owner'},
                        {'selector': '2', 'prompt': 'Manager', 'return': 'manager'},
                        {'selector': '3', 'prompt': 'Other', 'return': 'other'}]
@@ -143,25 +190,24 @@ class Chatbot(object):
             self.finish_chat(occupation, {})
             exit()
 
-        # truck name
-        truck_name = self.collect_truck()
+        # collect information on manufacturer and model name
+        manufacturer_name, model_name = self.collect_truck()
 
-        # fleet number
-        fleet_number = self.get_numeric_input("What is your fleet number?")
+        # collect fleet number
+        fleet_number = self.get_numeric_input("What is the fleet number of your truck?")
 
-        # get specification
-        year = self.get_numeric_input("What year was your truck made?")  # if time, format year
+        # collect some details on the truck specifications
         cylinders = self.get_numeric_input("How many cylinders does your truck have?")
-        horsepower = self.get_numeric_input("What is the horsepower of the truck?")
-        weight = self.get_numeric_input("How much does the truck weigh?")
+        horsepower = self.get_numeric_input("What is the horsepower of your truck?")
+        weight = self.get_numeric_input("How much does your truck roughly weigh?")
 
         dat_dict = {'id': str(uuid.uuid4()),
                     'started': self.startTime,
                     'finished': datetime.datetime.now(),
                     'occupation': occupation,
-                    'truck_name': truck_name.lower(),
+                    'manufacturer_name': manufacturer_name.lower(),
+                    'model_name': model_name.lower(),
                     'fleet_number': fleet_number,
-                    'year': year,
                     'cylinders': cylinders,
                     'horsepower': horsepower,
                     'weight': weight
