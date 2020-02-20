@@ -93,7 +93,30 @@ class Chatbot(object):
                                            'prompt': name,
                                            'return': name
                                            })
+
+        model_selector_options.append({'selector': len(model_selector_options) + 1,
+                                        'prompt': 'Other',
+                                        'return': 'other'
+                                        })
+
         return model_selector_options
+
+    def store_new_truck(self, manufacturer_name, model_name):
+        """where manufacturer name and/or model name is unknown, stores to truck dataset"""
+        new_truck = pd.DataFrame.from_dict({"manufacturer_name": [manufacturer_name],
+                                            "model_name": [model_name],
+                                            "class": "Unknown",
+                                            "cabin": "Unknown",
+                                            "country_of_origin": "Unknown",
+                                            "manufacturer_name_lower": [manufacturer_name.lower()],
+                                            "model_name_lower": [model_name.lower()],
+                                            "user_entry": 1
+                                            # future development would include maintaining and tidying the manual entries
+                                            })
+
+        new_truck.to_csv(os.path.join(self.dirname, "../data/input data/trucks.csv"), mode='a', header=False,
+                         index=False)
+
 
     def collect_truck(self):
         """"collects manufacturer and model name and matches against the trucks dataset"""
@@ -107,6 +130,9 @@ class Chatbot(object):
         if manufacturer_name.lower() in np.unique(known_trucks['manufacturer_name_lower']):
             model_selector_options = self.display_model_names(known_trucks, manufacturer_name)
             model_name = self.ask_multiple("Please select the name of your model?", model_selector_options)
+            if model_name == "other":
+                model_name = self.ask("Could you please tell me, what is model name of the your truck?")
+                self.store_new_truck(manufacturer_name, model_name)  # save data to dataset
             self.answer("Thanks! I would like to get to know more about your {}.".format(model_name))
 
         else:
@@ -131,7 +157,9 @@ class Chatbot(object):
 
                 model_selector_options = self.display_model_names(known_trucks, manufacturer_name)
                 model_name = self.ask_multiple("Please select the name of your model?", model_selector_options)
-
+                if model_name == "other":
+                    model_name = self.ask("Could you please tell me, what is model name of the your truck?")
+                    self.store_new_truck(manufacturer_name, model_name)  # save data to dataset
                 self.answer("Thanks! I would like to get to know more about your {}".format(model_name))
 
             else:
@@ -139,18 +167,7 @@ class Chatbot(object):
                             format(manufacturer_name))
                 model_name = self.ask("What is model name of the your truck?")
 
-                new_truck = pd.DataFrame.from_dict({"manufacturer_name": [manufacturer_name],
-                                                    "model_name": [model_name],
-                                                    "class": "Unknown",
-                                                    "cabin": "Unknown",
-                                                    "country_of_origin": "Unknown",
-                                                    "manufacturer_name_lower": [manufacturer_name.lower()],
-                                                    "model_name_lower": [model_name.lower()],
-                                                    "user_entry":1 # future development would include maintaining and tidying the manual entries
-                                                    })
-
-                new_truck.to_csv(os.path.join(self.dirname, "../data/input data/trucks.csv"), mode='a', header=False,
-                                  index=False)
+                self.store_new_truck(manufacturer_name, model_name) # save data to dataset
 
         return manufacturer_name, model_name
 
